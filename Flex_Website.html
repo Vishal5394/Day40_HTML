@@ -1,0 +1,85 @@
+<!doctype html>
+<title>Example</title>
+<style>
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  font-weight:  bold;
+  text-align: center;
+}
+#main > article {
+  display: flex;
+  flex: 1;
+  flex-flow: column wrap;
+  padding: 10px ;
+  margin: 10px;
+  background: aqua;
+}
+#main > LeftSideBar {
+  flex: 1 0 0 ; 
+  border: 0px solid green;
+  background: gold;
+}
+#main > RightSideBar {
+  flex: 1 0 0 ;
+  background: hotpink;
+  border: 0px solid green;
+}
+#main > LeftSideBar{
+  order: -1;
+}
+header{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  background: tomato;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+} 
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  background: lightgreen;
+  font-weight: bold;
+  padding: 10px;
+}
+header, footer, article, LeftSideBar, RightSideBar {
+  padding: 1em;
+}
+</style>
+<body>
+  <header>Header</header>
+  <div id="main">
+    <article>
+      <h2>First article</h2>
+      <p>Tacos actually microdosing,pour over semoiotics banjo chicharrones retro funny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui picked sriracha normcorc hasting polaroid single-origin coffe cold-pressd. PBR&B lattooed trust fund twee. kleggings salvia iphone booth heath goth gastopub hammock.</p>
+  </article>
+
+  <article>
+      <h2>Second article</h2>
+
+      <p>Tacos actually microdosing,pour over semoiotics banjo chicharrones retro funny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui picked sriracha normcorc hasting polaroid single-origin coffe cold-pressd. PBR&B lattooed trust fund twee. kleggings salvia iphone booth heath goth gastopub hammock.</p>
+  </article>
+
+  <article>
+      <h2>Third article</h2>
+
+      <p>Tacos actually microdosing,pour over semoiotics banjo chicharrones retro funny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui picked sriracha normcorc hasting polaroid single-origin coffe cold-pressd. PBR&B lattooed trust fund twee. kleggings salvia iphone booth heath goth gastopub hammock.</p>
+  </article>
+    <LeftSideBar>Left Side Bar</LeftSideBar>
+    <RightSideBar>Right Side Bar</RightSideBar>
+  </div>
+  <footer>Footer</footer>
+</body>
